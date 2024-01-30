@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST'])
 def post_number():
-    args = ['python', 'stress_cpu.py']
+    args = ['python3', 'stress_cpu.py']
     subprocess.Popen(args)
     return socket.gethostname()
 
